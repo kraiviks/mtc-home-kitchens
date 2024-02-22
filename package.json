@@ -10,7 +10,7 @@
     "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
     "lint:scss": "stylelint \"**/*.scss\"",
     "lint:scss:fix": "stylelint \"**/*.scss\" --fix",
-    "prettier": "npx prettier --write **/*.{js,jsx,json}",
+    "prettier": "npx prettier --write **/*.{js,jsx,json}"
   },
   "homepage": "https://mtc-home-kitchens.vercel.app/",
   "dependencies": {

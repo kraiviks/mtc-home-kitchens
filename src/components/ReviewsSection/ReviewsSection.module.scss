@@ -46,10 +46,9 @@
 
 			span{
 				margin-top: 3.3px;
-				margin-left: -4.5px;
-				font-size: 14px;
+				font-size: 15px;
 				color: var(--body-text);
-
+				letter-spacing:  -0.6px;;
 			}
 
 			@media(width <= 700px) {
@@ -69,8 +68,11 @@
 
 	button{
 		width: 100%;
-		max-width: 419px;
+		max-width: max-content;
 		margin: 19px auto 0;
-		padding: 21px 54px 21px 58.5px;
+		padding: 21px 54px 19px 62.5px;
+		font-size: 15px;
+		line-height: 22px;
+		letter-spacing: 3px;
 	}
 }

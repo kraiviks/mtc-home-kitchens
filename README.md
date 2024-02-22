@@ -17,8 +17,6 @@ npm run dev - run frontend project in dev mode
 - `npm run lint:scss` - Lint check for scss style files
 - `npm run lint:scss:fix` - Fix scss style files with linter
 - `npm run prettier` - Format code with prettier
-- `npm run predeploy` - Predeploy
-- `npm run deploy` - Deploy to gh-pages
 
 ---
 

@@ -1,5 +1,3 @@
-@import '@components/mixins';
-
 .footer{
 	display: flex;
 	flex-direction: column;
@@ -26,7 +24,7 @@
 
 		.footerNavItem {
 			h4{
-				margin-top: 31.1px;
+				margin-top: 30px;
 				margin-bottom: 22px;
 
 				font-family: Helvetica-Bold,sans-serif;
@@ -35,21 +33,22 @@
 			}
 
 			ul{
-				margin: 10px 0 0;
+				margin: 24px 0 0;
 				padding: 0;
 				
 				li{
-					@include letter-spacing(230.77);
+					letter-spacing: 3px;
 
 					font-size: 13px;
-					line-height: 30px;
+					line-height: 28.97px;
 					text-transform: uppercase;
 					list-style: none;
+					
 
 					a:not([target='_blank']){
 						color: var(--color-white);
 						transition: color .5s ease-in-out;
-
+						opacity: 0.8;
 						&::after{
 							content: '';
 
@@ -85,11 +84,22 @@
 
 			@media(width >= 768px) {
 				&:nth-child(2){
-					margin-left: -77px;
+					h4{
+						margin-left: -2px;
+					}
+					margin-left: -71px;
 				}
 
 				&:nth-child(3){
+					h4{
+						margin-left: -2px;
+					}
 					margin-left: -25px;
+				}
+				&:nth-child(4){
+					h4{
+						margin-left: 0.5px;
+					}
 				}
 			}
 		}
