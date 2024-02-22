@@ -1,0 +1,125 @@
+@import '@components/mixins';
+
+.footer{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
+	padding-top: 40.5px;
+	padding-bottom: 60px;
+
+	background-image: url('../../assets/bitmap.jpg');
+	background-repeat: no-repeat;
+	background-position: 100% 45%;
+	background-size: cover;
+
+	.footerNav{
+		display: flex;
+		justify-content: space-between;
+
+		width: 100%;
+		max-width: 810px;
+		margin-left: -50px;
+
+		color: var(--color-white);
+
+		.footerNavItem {
+			h4{
+				margin-top: 31.1px;
+				margin-bottom: 22px;
+
+				font-family: Helvetica-Bold,sans-serif;
+				font-size: 24px;
+				line-height: 42px;
+			}
+
+			ul{
+				margin: 10px 0 0;
+				padding: 0;
+				
+				li{
+					@include letter-spacing(230.77);
+
+					font-size: 13px;
+					line-height: 30px;
+					text-transform: uppercase;
+					list-style: none;
+
+					a:not([target='_blank']){
+						color: var(--color-white);
+						transition: color .5s ease-in-out;
+
+						&::after{
+							content: '';
+
+							display: block;
+
+							width: 0%;
+							height: 1px;
+
+							background-color: var(--color-primary);
+
+							transition: width .5s ease-in-out;
+						}
+
+						&:hover{
+							color: var(--color-primary);
+
+							&::after{
+								content: '';
+								display: block;
+								width: 100%;
+								height: 1px;
+							}
+						}
+					}
+				}
+			}
+
+			&:last-child{
+				ul{
+					margin-top: 31px;
+				}
+			}
+
+			@media(width >= 768px) {
+				&:nth-child(2){
+					margin-left: -77px;
+				}
+
+				&:nth-child(3){
+					margin-left: -25px;
+				}
+			}
+		}
+
+		@media(width <= 1280px) {
+			margin-left: 0;
+			padding: 0 16px;
+		}
+
+		@media(width <= 650px) {
+			flex-direction: column;
+		}
+	}
+
+	.footerCopyright{
+		width: 100%;
+		max-width: 368px;
+		margin-top: 38px;
+		margin-bottom: 55px;
+
+		font-size: 13px;
+		line-height: 26px;
+		color: #707070;
+		text-align: center;
+	}
+	
+	.footerBottomLine{
+		width: 100%;
+		max-width: 1300px;
+		height: 1px;
+		background: #707070;
+	}
+}

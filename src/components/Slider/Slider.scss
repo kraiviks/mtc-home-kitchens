@@ -1,0 +1,78 @@
+@import '@components/mixins';
+
+.slider {
+	max-width: 686px;
+	height: 100%;
+	color: var(--color-white);
+	text-align: center;
+
+	.swiper-wrapper{
+		height: calc(100% - 43px);
+
+		.swiper-slide{
+			/* Center slide text vertically */
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+
+			margin-top: 44px;
+
+			h2{
+				@include letter-spacing(-19.23);
+
+				margin: 0 0 33px;
+				font-family: Helvetica-Bold, sans-serif;
+				font-size: 52px;
+				line-height: 59px;
+			}
+		
+			h4 {
+				@include letter-spacing(230.77);
+
+				margin: 0 0 3px;
+				padding-left: 5px;
+
+				font-family: Roboto, sans-serif;
+				font-size: 13px;
+				text-transform: uppercase;
+			}
+
+			.slider-btn{
+				min-width: 228px;
+			}
+		}
+	}
+
+		.swiper-pagination-bullet{
+			display: inline-flex;
+
+			width: 50px;
+			height: 5px;
+
+			background-color: var(--color-white);
+			border-radius: 2.5px;
+
+			transition: background-color .5s ease-in-out;
+
+			&:not(:last-child){
+				margin-right: 10px;
+			}
+	
+			&-active{
+				background-color: var(--color-primary);
+			}
+		}
+	
+
+	.swiper-button-prev, .swiper-button-next{
+		top: 69%;
+		width: 16px;
+		font-size: 15px;
+		color: var(--color-primary);
+
+		&.swiper-button-disabled{
+			opacity: .5;
+		}
+	}
+}

@@ -1,0 +1,82 @@
+@import '@components/mixins';
+
+.nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  width: 100%;
+  min-width: 560px;
+  max-width: 920.61px;
+  padding-left: 72px;
+
+  color: var(--color-white);
+}
+
+.navLinks {
+  display: flex;
+  gap: 37px;
+  margin-top: 8px;
+
+  .navLink {
+    font-size: 13px;
+    color: var(--color-white);
+    text-transform: uppercase;
+    letter-spacing: 0.19em;
+    white-space: nowrap;
+
+    transition: color 0.5s ease-in-out;
+
+    &::after {
+      content: '';
+
+      display: block;
+
+      width: 0%;
+      height: 1px;
+
+      background-color: var(--color-primary);
+
+      transition: width 0.5s ease-in-out;
+    }
+
+    &:hover {
+      color: var(--color-primary);
+
+      &::after {
+        content: '';
+        display: block;
+        width: 100%;
+        height: 1px;
+      }
+    }
+  }
+
+  &:first-child {
+    .navLink:last-child {
+      margin-left: 3px;
+      letter-spacing: 0.21em;
+    }
+  }
+
+  &:last-child {
+    .navLink:first-child {
+      margin-right: -3px;
+      letter-spacing: 0.21em;
+    }
+  }
+}
+
+.nav.mobile {
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 0;
+
+  .navLinks {
+    flex-direction: column;
+
+    .navLink {
+      color: var(--title-text);
+    }
+  }
+}

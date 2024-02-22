@@ -1,0 +1,78 @@
+// *{
+//   border: 1px solid red;
+// }
+@font-face {
+  font-family: HelveticaNeue;
+  src: url('./assets/fonts/HelveticaNeue.otf') format('opentype');
+}
+
+@font-face {
+  font-family: Helvetica-Bold;
+  font-weight: bold;
+  src: url('./assets/fonts/Helvetica-Bold.eot');
+  src: url('./assets/fonts/Helvetica-Bold.eot?#iefix') format('embedded-opentype'),
+       url('./assets/fonts/Helvetica-Bold.woff') format('woff'),
+       url('./assets/fonts/Helvetica-Bold.ttf') format('truetype');
+}
+
+:root {
+  --color-primary: #D4B254;
+  --title-text: #222;
+  --body-text: #777;
+  --color-white: #FFF;
+  --font-primary: "Roboto", sans-serif;
+  --swiper-navigation-size: 75px
+;
+
+  font-family: var(--font-primary);
+  font-weight: 400;
+  color: var(--body-text);
+  text-rendering: optimizelegibility;}
+
+*{
+  box-sizing: border-box;
+}
+
+a {
+  cursor: pointer;
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: none;
+}
+
+a:hover {
+  color: #535bf2;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+html{
+  scroll-behavior: smooth;
+}
+
+.bm-menu {
+  padding: 2.5em 1.5em 0;
+  font-size: 1.15em;
+  background: var(--color-white);
+}
+
+.bm-item-list {
+  padding: 0.8em;
+  color: #b8b7ad;
+}
+
+.bm-item {
+  display: inline-block;
+}
+
+.hamburger-react{
+  position: absolute !important;
+  z-index: 1101;
+  top: 5%;
+  right: 5%;
+
+  margin-top: 5%;
+}

@@ -1,0 +1,25 @@
+.list {
+	display: flex;
+	gap: 15px;
+	padding: 0;
+	list-style: none;
+
+	svg{
+		mix-blend-mode: difference;
+		transition: all .5s ease-in-out;
+
+		&:hover{
+			mix-blend-mode: darken;
+			fill: var(--color-primary);
+		}
+	}
+
+	.withBackground{
+		width: 40px;
+		height: 40px;
+
+		svg{
+			font-size: 20px;
+		}
+	}
+}

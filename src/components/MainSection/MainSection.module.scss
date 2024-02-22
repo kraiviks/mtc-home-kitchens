@@ -1,0 +1,15 @@
+.mainSection{ 
+	display: flex;
+	justify-content: center;
+
+	height: 100vh;
+
+	background-image: url('../../assets/bitmap-s.jpg');
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: cover;
+
+	@media(width >= 768px){
+		height: 900px;
+	}
+}
