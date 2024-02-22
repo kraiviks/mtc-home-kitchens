@@ -1,5 +1,5 @@
 ## Demo
-- [Demo](https://blog-app-eosin-seven.vercel.app)
+- [Demo](https://mtc-home-kitchens.vercel.app/)
 
 ## Run the project
 
