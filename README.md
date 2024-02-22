@@ -1,3 +1,32 @@
+## Demo
+- [Demo](https://blog-app-eosin-seven.vercel.app)
+
+## Run the project
+
+```
+npm install - install dependencies
+npm run dev - run frontend project in dev mode
+```
+
+---
+
+## Scripts
+
+- `npm run dev` - Run frontend project on vite
+- `npm run build` - Build in prod mode
+- `npm run lint:scss` - Lint check for scss style files
+- `npm run lint:scss:fix` - Fix scss style files with linter
+- `npm run prettier` - Format code with prettier
+
+---
+
+##### Run linters
+
+- `npm run lint:scss` - check scss files
+- `npm run lint:scss:fix` - fix scss files
+
+---
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
