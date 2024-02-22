@@ -5,10 +5,10 @@ import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
 
 const images = [
-  { src: 'src/assets/gallery/bitmap-1.jpg' },
-  { src: 'src/assets/gallery/bitmap-2.jpg' },
-  { src: 'src/assets/gallery/bitmap-3.jpg' },
-  { src: 'src/assets/gallery/bitmap-4.jpg' },
+  { src: '/gallery/bitmap-1.jpg' },
+  { src: '/gallery/bitmap-2.jpg' },
+  { src: '/gallery/bitmap-3.jpg' },
+  { src: '/gallery/bitmap-4.jpg' },
 ];
 const GallerySection = () => {
   const [imgIndex, setImgIndex] = useState(-1);

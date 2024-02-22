@@ -25,9 +25,7 @@ const Header = () => {
               variant='primary'
               className={styles.button}
               style={{ margin: isSmallWindow ? '0 auto' : '0 0 0 65px', padding: '19px 0' }}
-              icon={
-                <img src='src/assets/shopping-cart@2x.png' width={14} height={13} style={{ marginLeft: 13 }} alt='' />
-              }
+              icon={<img src='/shopping-cart@2x.png' width={14} height={13} style={{ marginLeft: 13 }} alt='' />}
             />
           </Menu>
         </>
@@ -41,7 +39,7 @@ const Header = () => {
             label='My order'
             variant='outline'
             className={styles.button}
-            icon={<img src='src/assets/shopping-cart@2x.png' width={14} height={13} alt='' />}
+            icon={<img src='/shopping-cart@2x.png' width={14} height={13} alt='' />}
           />
         </>
       )}

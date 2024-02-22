@@ -4,7 +4,7 @@ const AboutSection = () => {
   return (
     <section className={styles.section} id='about'>
       <div className={styles.box}>
-        <img src='src/assets/bitmap-l.jpg' alt='bitmap-l' />
+        <img src='/bitmap-l.jpg' alt='bitmap-l' />
       </div>
       <div className={styles.box}>
         <div className={styles.boxContent}>
