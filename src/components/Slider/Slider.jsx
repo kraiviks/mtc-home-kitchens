@@ -25,10 +25,10 @@ const Slider = ({ data, navigation, pagination, className, classNameContainer })
       modules={[Navigation, Autoplay, Pagination]}
       navigation={navigation}
       pagination={pagination && customPagination}
-      autoplay={{
-        delay: 3000,
-        disableOnInteraction: false,
-      }}
+      // autoplay={{
+      //   delay: 3000,
+      //   disableOnInteraction: false,
+      // }}
     >
       {data.map((slide) => {
         return (

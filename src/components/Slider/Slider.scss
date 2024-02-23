@@ -17,30 +17,49 @@
 			margin-top: 44px;
 
 			h2{
-				letter-spacing: -1px;
+				letter-spacing: 3px;
+				@media(min-width: 768px){
+					height: 110px;
+					line-height: 59px;
+					letter-spacing: -1px;
+				}
 
-				margin: 0 0 33px;
+				margin: 0 0 34px;
 				font-family: Helvetica-Bold, sans-serif;
 				font-size: 52px;
-				line-height: 59px;
+				line-height: 42px;
+				text-shadow: 0px 0px 25px #00000080;
+
+				@media(width <= 768px){
+					font-size: 32px;
+				}
 			}
 		
 			h4 {
 				letter-spacing: 3px;
 
-				margin: 0 0 3px;
+				margin: 0 0 15px 0;
 				padding-left: 5px;
 
 				font-family: Roboto, sans-serif;
 				font-size: 13px;
 				text-transform: uppercase;
+				text-shadow: 0px 0px 4px #000000;
+				height: 18px;
+				@media(min-width: 768px){
+					line-height: 11px;
+					margin: 0;
+				}
 			}
 
 			.slider-btn{
-				padding: 22px 57px 19px 60px;
+				padding: 21px 56.2px 19px 59.5px;
 				letter-spacing: 3px;
 				font-size: 15px;
 				line-height: 20px;
+				height: 60px;
+				top: 3px;
+				position: relative;
 			}
 		}
 	}
@@ -67,7 +86,7 @@
 	
 
 	.swiper-button-prev, .swiper-button-next{
-		top: 69%;
+		top: 61%;
 		width: 16px;
 		font-size: 15px;
 		color: var(--color-primary);

@@ -1,5 +1,6 @@
 import Button from '@components/Button';
 import styles from './AboutSection.module.scss';
+
 const AboutSection = () => {
   return (
     <section className={styles.section} id='about'>

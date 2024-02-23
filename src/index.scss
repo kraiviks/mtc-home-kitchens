@@ -53,6 +53,13 @@ html{
   scroll-behavior: smooth;
 }
 
+section, footer {
+  @media(min-width: 2000px){
+    max-width: 2000px;
+    margin: 0 auto;
+  }
+}
+
 .bm-menu {
   padding: 2.5em 1.5em 0;
   font-size: 1.15em;

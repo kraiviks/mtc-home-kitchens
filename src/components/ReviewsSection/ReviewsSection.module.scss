@@ -3,15 +3,32 @@
 	flex-direction: column;
 	justify-content: center;
 
-	padding: 77px 0 115px;
+	padding: 122px 0 115px;
 
 	font-family: Helvetica-Bold, sans-serif;
 
 	background: #EEE;
 
+	h4 {
+		letter-spacing: 3px;
+
+		margin: 0 0 3px;
+		padding-left: 5px;
+		text-align: center;
+		font-family: Roboto, sans-serif;
+		font-size: 13px;
+		text-transform: uppercase;
+		color: var(--color-primary);
+	}
+
 	.slider{
 		width: 100%;
 		max-width: 1080px;
+		&>div{
+			&>div{
+				margin-top: 0 !important;
+			}
+		}
 
 		.slideContainer{
 			display: flex;
@@ -21,34 +38,33 @@
 			max-width: 600px;
 			padding-bottom: 17px;
 
-			h4{
-				color: var(--color-primary);
-			}
-
 			h2{
-				margin-top: 13px;
-				margin-bottom: 8px;
+				margin: 0;
 
 				font-size: 32px !important;
 				line-height: 42px !important;
 				color: #222;
 				letter-spacing: normal;
+				margin-top: -5px;
+				@media(min-width: 768px){
+					height: 84px;
+				}
 			}
 
+
 			p{
-				margin-top: 14px;
+				margin-top: 21px;
 
 				font-family: Helvetica-Bold, sans-serif;
 				font-size: 18px;
-				line-height: 31px;
+				line-height: 32px;
 				color: var(--body-text);
 			}
 
 			span{
-				margin-top: 3.3px;
 				font-size: 15px;
 				color: var(--body-text);
-				letter-spacing:  -0.6px;;
+				letter-spacing:  -0.3px;;
 			}
 
 			@media(width <= 700px) {

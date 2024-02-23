@@ -1,9 +1,4 @@
 .footer{
-	display: flex;
-	flex-direction: column;
-	align-items: center;
-	justify-content: center;
-
 	padding-top: 40.5px;
 	padding-bottom: 60px;
 
@@ -106,7 +101,6 @@
 
 		@media(width <= 1280px) {
 			margin-left: 0;
-			padding: 0 16px;
 		}
 
 		@media(width <= 650px) {

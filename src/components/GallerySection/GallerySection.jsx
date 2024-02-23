@@ -3,6 +3,7 @@ import Button from '../Button';
 import styles from './GallerySection.module.scss';
 import Lightbox from 'yet-another-react-lightbox';
 import 'yet-another-react-lightbox/styles.css';
+import cn from 'classnames';
 
 const images = [
   { src: '/gallery/bitmap-1.jpg' },
@@ -14,7 +15,7 @@ const GallerySection = () => {
   const [imgIndex, setImgIndex] = useState(-1);
 
   return (
-    <section className={styles.section} id='gallery'>
+    <section className={cn(styles.section, 'container')} id='gallery'>
       <h3>Customer Gallery</h3>
       <div className={styles.gallery}>
         {images.map((item, index) => (
